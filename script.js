@@ -7,6 +7,8 @@ var btnC = document.getElementById('criptobtn')
 // botao descripto
 var btnD = document.getElementById('descriptobtn')
 
+var btnCopy = document.getElementById('copy')
+
 textoNormal.focus()
 
 function criptografar(){
@@ -35,7 +37,8 @@ function criptografar(){
      navigator.clipboard.writeText(copy);
  }
 
- 
+btnCopy.onclick = copy;
+
 btnC.onclick = criptografar;
 
 btnD.onclick = descriptografar;
